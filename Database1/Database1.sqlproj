@@ -57,12 +57,13 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="Stored Procedures" />
+    <Folder Include="Tables" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Persons.sql" />
-    <Build Include="sp_Persons_Select.sql" />
-    <Build Include="sp_Persons_Insert.sql" />
-    <Build Include="sp_Persons_Update.sql" />
+    <Build Include="Stored Procedures\sp_Persons_Insert.sql" />
+    <Build Include="Stored Procedures\sp_Persons_Select.sql" />
+    <Build Include="Stored Procedures\sp_Persons_Update.sql" />
+    <Build Include="Tables\Persons.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Database1.refactorlog" />
