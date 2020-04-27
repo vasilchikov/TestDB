@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [dbo].[sp_persons_Insert]
+﻿CREATE PROCEDURE [dbo].[sp_Persons_Insert]
 	@Id			 int                 --Идентификатор лица
    ,@Surname	 nvarchar(50)        --Фамилия
    ,@Name		 nvarchar(50)        --Имя
