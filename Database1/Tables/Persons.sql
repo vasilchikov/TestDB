@@ -4,7 +4,7 @@
     [Surname] NVARCHAR(50) NOT NULL, 
     [Name] NVARCHAR(50) NOT NULL, 
     [Patronymic] NVARCHAR(50) NULL, 
-    [DateOfBirth] DATE NULL, 
+    [DateOfBirth] DATE NOT NULL, 
     [DateInput] DATETIME NULL CONSTRAINT [DF_Persons_DateInput] DEFAULT(getdate())
 )
 
