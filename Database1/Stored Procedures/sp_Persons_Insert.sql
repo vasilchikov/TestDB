@@ -5,6 +5,7 @@
    ,@Patronymic  nvarchar(50) = NULL --Отчество
    ,@DateOfBirth date                --Дата рождения
    ,@Phone       varchar(15)  = NULL --Номер телефона
+   ,@Email       nvarchar(50) = NULL --Email
 AS
 BEGIN
     --SET NOCOUNT ON запрещает вывод количества строк, на которые влияет 
@@ -16,8 +17,7 @@ BEGIN
                 ,[Surname]
                 ,[Name]
                 ,[Patronymic]
-                ,[DateOfBirth]
-                ,[Phone])
+                ,[DateOfBirth])
         VALUES
                 (@Id
                 ,@Surname
@@ -25,4 +25,5 @@ BEGIN
                 ,@Patronymic
                 ,@DateOfBirth
                 ,@Phone);
+                ,@Email);
 END

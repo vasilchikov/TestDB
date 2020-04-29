@@ -8,6 +8,7 @@
     [DateInput] DATETIME NULL CONSTRAINT [DF_Persons_DateInput] DEFAULT(getdate()), 
     [DateCorrection] DATETIME NOT NULL CONSTRAINT [DF_DateCorrection] DEFAULT(getdate()), 
     [Phone] VARCHAR(15) NULL
+    [Email] NVARCHAR(50) NULL
 )
 
 GO
@@ -82,3 +83,13 @@ EXEC sp_addextendedproperty @name = N'MS_Description',
     @level1name = N'Persons',
     @level2type = N'COLUMN',
     @level2name = N'Phone'
+    @level2name = N'DateCorrection'
+GO
+EXEC sp_addextendedproperty @name = N'MS_Description',
+    @value = N'Email',
+    @level0type = N'SCHEMA',
+    @level0name = N'dbo',
+    @level1type = N'TABLE',
+    @level1name = N'Persons',
+    @level2type = N'COLUMN',
+    @level2name = N'Email'

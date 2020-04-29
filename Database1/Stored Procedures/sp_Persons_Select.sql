@@ -8,6 +8,7 @@ BEGIN
 		  ,[Persons].[Patronymic]
 		  ,[Persons].[DateOfBirth]
 		  ,[Persons].[Phone]
+		  ,[Persons].[Email]
 	FROM   [dbo].[Persons]
 	WHERE  [Persons].[Id]=@Id;
 END
