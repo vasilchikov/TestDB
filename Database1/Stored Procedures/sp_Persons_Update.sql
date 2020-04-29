@@ -15,5 +15,6 @@ BEGIN
 	  ,[Name]			=@Name
 	  ,[Patronymic]		=@Patronymic
 	  ,[DateOfBirth]	=@DateOfBirth
+	  ,[DateCorrection] =GETDATE()
 	WHERE [Id] = @Id;
 END
