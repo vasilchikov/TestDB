@@ -24,6 +24,6 @@ BEGIN
                 ,@Name
                 ,@Patronymic
                 ,@DateOfBirth
-                ,@Phone
+                ,@Phone);
                 ,@Email);
 END

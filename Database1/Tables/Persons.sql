@@ -7,8 +7,8 @@
     [DateOfBirth] DATE NULL, 
     [DateInput] DATETIME NULL CONSTRAINT [DF_Persons_DateInput] DEFAULT(getdate()), 
     [DateCorrection] DATETIME NOT NULL CONSTRAINT [DF_DateCorrection] DEFAULT(getdate()), 
-    [Phone] VARCHAR(15) NOT NULL,
-    [Email] NVARCHAR(50) NOT NULL
+    [Phone] VARCHAR(15) NULL,
+    [Email] NVARCHAR(50) NULL
 )
 
 GO
