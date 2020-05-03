@@ -9,6 +9,7 @@ BEGIN
 		  ,[Persons].[DateOfBirth]
 		  ,[Persons].[Phone]
 		  ,[Persons].[Email]
+		  ,DATEDIFF (mm, [Persons].[DateOfBirth], GETDATE())/12 AS [Age]
 	FROM   [dbo].[Persons]
 	WHERE  [Persons].[Id]=@Id;
 END
