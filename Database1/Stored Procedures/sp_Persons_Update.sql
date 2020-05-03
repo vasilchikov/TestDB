@@ -5,7 +5,7 @@
 	,@Patronymic		nvarchar(50) --Отчество
 	,@DateOfBirth		date		 --Дата рождения
 	,@Phone				varchar(15)  --Номер телефона
-	,@Email				nvarchar(50) --Email
+	,@Email				nvarchar(400) --Email
 AS
 BEGIN
 	--SET NOCOUNT ON запрещает вывод колличества строк, на которые влияет
